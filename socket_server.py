@@ -42,11 +42,9 @@ while True:
         if data==b'exit':
             break
 
-
         # 处理客户端数据
         conn.send(data)
         conn.send(str(random.randint(1,1000)).encode())
-
 
 
     # 主动关闭连接

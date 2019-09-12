@@ -1,3 +1,4 @@
+# -*- coding:utf-8 -*-
 import socket
 
 client = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)   # ip v4, udp
@@ -6,7 +7,6 @@ ip_port = ("127.0.0.1", 8888)
 
 while True:
     msg_input = input("请输入要发送的信息：")
-
 
     # 退出条件
     if msg_input == "exit":
